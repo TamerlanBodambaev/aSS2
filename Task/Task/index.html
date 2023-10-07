@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Rock-Paper-Scissors Game</h1>
+    <p>Your Address: <span id="playerAddress"></span></p>
+    <p>Your Balance: <span id="playerBalance"></span> ETH</p>
+    <label for="move">Select Move:</label>
+    <select id="move">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+    <button onclick="register()">Register</button>
+    <button onclick="play()">Play</button>
+    <button onclick="reveal()">Reveal</button>
+    <button onclick="getOutcome()">Get Outcome</button>
+    <h2>Game Status</h2>
+    <p>Game Started: <span id="gameStarted"></span></p>
+    <p>Both Played: <span id="bothPlayed"></span></p>
+    <p>Both Revealed: <span id="bothRevealed"></span></p>
+    <p>Reveal Time Left: <span id="revealTimeLeft"></span> seconds</p>
+    <h2>Game Result</h2>
+    <p>Winner: <span id="winner"></span></p>
+    <p>Draw: <span id="draw"></span></p>
+    <h2>Game History</h2>
+    <ul id="gameHistory">
+        <!-- Здесь будет отображаться история игр -->
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
